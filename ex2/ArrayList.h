@@ -17,3 +17,4 @@ ArrayList* createArrayList(int capacity);
 int getClosestPower(int n, int wantedValue);
 void printArrayList(ArrayList* arrayList);
 void freeArrayList(ArrayList* arrayList);
+
