@@ -116,7 +116,7 @@ char** split(const char* str, int* outputCount) {
 		partitionSize++;
 	}
 	
-	char** splitStringStart = str + i - partitionSize + 1;
+	char* splitStringStart = str + i - partitionSize + 1;
 	addString(&splittedString, *outputCount, splitStringStart, partitionSize);
 	(*outputCount)++;
 
