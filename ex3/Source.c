@@ -106,7 +106,7 @@ char** split(const char* str, int* outputCount) {
 	
 	for (i = 0; str[i] != '\0'; i++) {
 		if (str[i] == ' ') {
-			int splitStringStart = str + i - partitionSize + 1;
+			char* splitStringStart = str + i - partitionSize + 1;
 			addString(&splittedString, *outputCount, splitStringStart, partitionSize);
 
 			partitionSize = 0;
